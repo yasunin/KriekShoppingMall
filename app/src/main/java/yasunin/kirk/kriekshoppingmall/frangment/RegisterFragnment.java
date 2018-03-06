@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import yasunin.kirk.kriekshoppingmall.MainActivity;
 import yasunin.kirk.kriekshoppingmall.R;
@@ -45,7 +46,11 @@ public class RegisterFragnment extends Fragment {
 
     private void uplondToSever() {
 
-    }
+//        Get Value Frome Edittext
+
+
+
+    }  //uplondtosever
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {

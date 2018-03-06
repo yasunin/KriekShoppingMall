@@ -36,6 +36,7 @@
 
             <!--Tex-->
             <EditText
+                android:id="@+id/edtName"
                 android:inputType="text"
                 android:hint="Name"
                 android:layout_width="match_parent"
@@ -58,6 +59,7 @@
 
             <!--Tex-->
             <EditText
+                android:id="@+id/edtUser"
                 android:inputType="text"
                 android:hint="User"
                 android:layout_width="match_parent"
@@ -80,6 +82,7 @@
 
             <!--Tex-->
             <EditText
+                android:id="@+id/edtPass"
                 android:inputType="text"
                 android:hint="@string/Password"
                 android:layout_width="match_parent"
@@ -96,15 +99,18 @@
             android:layout_height="wrap_content" />
 
         <RadioGroup
+            android:id="@+id/ragMode"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/radowershop"
                 android:text="OwerShop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <RadioButton
+                android:id="@+id/radCustomer"
                 android:text="Customer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
