@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import yasunin.kirk.kriekshoppingmall.R;
 
@@ -19,9 +20,26 @@ public class MainFrangment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
-
+//    Register Contentler
+        registerContentler();
     }   //Maim Method
+
+    private void registerContentler() {
+        TextView textView = getView().findViewById(R.id.txtNewRegister);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Replace Fragmait
+
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMain,new RegisterFragnment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+    }
 
     @Nullable
     @Override
