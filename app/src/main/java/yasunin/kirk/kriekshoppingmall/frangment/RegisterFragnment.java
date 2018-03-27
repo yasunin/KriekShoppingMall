@@ -21,7 +21,7 @@ import yasunin.kirk.kriekshoppingmall.utility.MyAlert;
  * Created by fany on 3/6/2018.
  */
 
-public class RegisterFragnment extends Fragment {
+public class RegisterFragnment  extends Fragment {
 
 //    Explict
 
